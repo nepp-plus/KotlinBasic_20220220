@@ -58,12 +58,18 @@ class MainActivity : AppCompatActivity() {
 
         btnConditionPractice.setOnClickListener {
 
-            val userAge = 15
+            val userAge = 25
 
             if (userAge >= 20) {
 
 //                userAge의 값이 20 이상이면 실행됨.
                 Toast.makeText(this, "성인입니다.", Toast.LENGTH_SHORT).show()
+
+            }
+            else {
+//                위의 질문이 틀렸을때 대응할 코드 추가.
+
+                Toast.makeText(this, "미성년자입니다.", Toast.LENGTH_SHORT).show()
 
             }
 
