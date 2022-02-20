@@ -131,5 +131,14 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnApply.setOnClickListener {
+
+            val inputMessage = edtMessage.text.toString()
+
+//            txtMessage 태그의 text 속성에, 입력한 메세지를 적용.
+            txtMessage.text = inputMessage
+
+        }
+
     }
 }
